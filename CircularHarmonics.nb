@@ -1,0 +1,235 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8021,        225]
+NotebookOptionsPosition[      4456,        145]
+NotebookOutlinePosition[      7456,        219]
+CellTagsIndexPosition[      7413,        216]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"B", "[", "degree_", "]"}], ":=", " ", 
+   RowBox[{
+    RowBox[{"1", "/", 
+     RowBox[{"(", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{"2", " ", "*", " ", "Pi"}], "]"}], ")"}]}], "/;", " ", 
+    RowBox[{"Equal", "[", 
+     RowBox[{"degree", " ", ",", " ", "0"}], "]"}]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"B", "[", 
+   RowBox[{"degree_", ",", " ", "theta_"}], "]"}], " ", ":=", " ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Cos", "[", " ", 
+     RowBox[{
+      RowBox[{"Floor", "[", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"degree", " ", "+", " ", "1"}], ")"}], "/", "2"}], "]"}], 
+      " ", "*", "  ", "theta"}], "]"}], "/", " ", 
+    RowBox[{"(", 
+     RowBox[{"Sqrt", "[", "Pi", "]"}], ")"}]}], " ", "/;", 
+   RowBox[{"And", "[", 
+    RowBox[{
+     RowBox[{"degree", " ", ">", " ", "0"}], " ", ",", " ", 
+     RowBox[{"Equal", "[", 
+      RowBox[{
+       RowBox[{"Mod", "[", 
+        RowBox[{
+         RowBox[{"degree", " ", "+", " ", "1"}], ",", "2"}], "]"}], ",", " ", 
+       "0"}], "]"}]}], "]"}]}]}]}], "Input",
+ CellChangeTimes->{{3.844169456323744*^9, 3.844169482263154*^9}, {
+  3.8441695630249023`*^9, 3.8441695642786584`*^9}},
+ CodeAssistOptions->{
+ "CodeToolsOptions"->Association[
+  "CodeInspect" -> 
+   Association[
+    "Disableds" -> {
+      "UnusedParameter"}]]},ExpressionUUID->"d9a1da01-f9ef-4012-8a75-\
+3fcfd6d9146e"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"B", "[", 
+   RowBox[{"degree_", ",", " ", "theta_"}], "]"}], ":=", " ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Sin", "[", " ", 
+     RowBox[{
+      RowBox[{"Floor", "[", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"degree", " ", "+", " ", "1"}], ")"}], "/", "2"}], "]"}], 
+      " ", "*", "  ", "theta"}], "]"}], "/", " ", 
+    RowBox[{"(", 
+     RowBox[{"Sqrt", "[", "Pi", "]"}], ")"}]}], " ", "/;", " ", 
+   RowBox[{"And", "[", 
+    RowBox[{
+     RowBox[{"degree", " ", ">", " ", "0"}], " ", ",", " ", 
+     RowBox[{"Equal", "[", 
+      RowBox[{
+       RowBox[{"Mod", "[", 
+        RowBox[{
+         RowBox[{"degree", " ", "+", " ", "1"}], ",", "2"}], "]"}], ",", " ", 
+       "1"}], "]"}]}], "]"}]}]}]], "Input",
+ CellLabel->
+  "In[141]:=",ExpressionUUID->"c76a436e-24da-4bd3-9613-b74172df66c9"],
+
+Cell[BoxData[
+ RowBox[{"B", "[", 
+  RowBox[{"1", ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.844169609436775*^9, 3.844169612950083*^9}},
+ CellLabel->
+  "In[146]:=",ExpressionUUID->"921fabd2-9ac0-459b-bb1c-e05b1b08aea7"],
+
+Cell[BoxData[
+ RowBox[{"0", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.8441696217989078`*^9, 3.8441696298954935`*^9}, {
+  3.844169666269642*^9, 
+  3.8441696974672155`*^9}},ExpressionUUID->"df9d5a7d-978d-44bb-a361-\
+734eed94bad6"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Cos", "[", " ", 
+   RowBox[{
+    RowBox[{"Floor", "[", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", " ", "+", " ", "1"}], ")"}], "/", "2"}], "]"}], " ", "*", 
+    "  ", "theta"}], "]"}], "/", " ", 
+  RowBox[{"(", 
+   RowBox[{"Sqrt", "[", "Pi", "]"}], ")"}]}]], "Input",
+ CellLabel->
+  "In[153]:=",ExpressionUUID->"76b317b5-d36d-4842-871c-53b37b82414f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ FractionBox[
+  RowBox[{"Cos", "[", "theta", "]"}], 
+  SqrtBox["\[Pi]"]], "\[IndentingNewLine]", 
+ RowBox[{"And", "[", 
+  RowBox[{
+   RowBox[{"1", " ", ">", " ", "0"}], " ", ",", " ", 
+   RowBox[{"Equal", "[", 
+    RowBox[{
+     RowBox[{"Mod", "[", 
+      RowBox[{
+       RowBox[{"1", " ", "+", " ", "1"}], ",", "2"}], "]"}], ",", " ", "0"}], 
+    "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.84416969970434*^9, 3.844169700352196*^9}},
+ CellLabel->
+  "In[158]:=",ExpressionUUID->"ca64df28-0424-449f-b8ad-36a660066eba"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.844169700901141*^9},
+ CellLabel->
+  "Out[159]=",ExpressionUUID->"eade4d3e-bcdd-4fb1-8562-3aa0fae9b3e9"]
+}, Open  ]]
+},
+WindowSize->{1034, 1348},
+WindowMargins->{{1011, Automatic}, {Automatic, 31}},
+DockedCells->{
+  Cell[
+   BoxData[
+    DynamicModuleBox[{}, 
+     DynamicBox[
+      ToBoxes[
+       Graphics[{
+         Inset[
+          Row[{
+            Pane[
+             CodeInspector`LinterUI`Private`styleData["SectionHeader"][
+             "Code Analysis"], 
+             BaselinePosition -> (Baseline -> Scaled[0.65])], 
+            Spacer[8], 
+            Pane[
+             
+             PaneSelector[{
+              True -> ProgressIndicator[Appearance -> "Percolate"], False -> 
+               Pane[
+                 CodeInspector`LinterUI`Private`dockedCellSeverityCountsButton[
+                  NotebookObject["eae0b851-3a6c-4f8a-abf2-3fcf754d3c8f"]], 
+                 BaselinePosition -> Scaled[0.5]], Blank[] -> Spacer[0]}, 
+              Dynamic[
+               CodeInspector`LinterUI`Private`performAnalysisQ[
+                NotebookObject["eae0b851-3a6c-4f8a-abf2-3fcf754d3c8f"]]]], 
+             BaselinePosition -> Scaled[0.15]]}, Alignment -> Baseline], 
+          Offset[{8, 0}, {-1, 0}], {-1, 0}], 
+         Inset[
+          CodeInspector`LinterUI`Private`button["Reanalyze Notebook", 
+           CodeInspector`LinterUI`Private`attachAnalysisAction[
+            EvaluationNotebook[]], Method -> "Queued"], 
+          Offset[{-26, 0}, {1, 0}], {1, 0}], 
+         Button[
+          Tooltip[
+           CodeInspector`LinterUI`Private`closeIcon[{-11, 0}, {1, 0}], 
+           "Close analysis", TooltipDelay -> 0], NotebookDelete[
+            Flatten[
+             Through[
+              Values[
+               CodeInspector`LinterUI`Private`lintedCells[
+               "eae0b851-3a6c-4f8a-abf2-3fcf754d3c8f"]]["UIAttachedCells"]]]]; 
+          CurrentValue[
+             EvaluationNotebook[], DockedCells] = Drop[
+             CurrentValue[
+              EvaluationNotebook[], DockedCells], -1]; 
+          CodeInspector`LinterUI`Private`lintedCells[
+            "eae0b851-3a6c-4f8a-abf2-3fcf754d3c8f"] = Association[]]}, 
+        ImageSize -> {Full, 23}, AspectRatio -> Full, 
+        PlotRange -> {{-1, 1}, {-1, 1}}], StandardForm], UpdateInterval -> 
+      DirectedInfinity[1]], 
+     Initialization :> (CodeInspector`LinterUI`Private`dockedCellPresentQ[
+        NotebookObject["eae0b851-3a6c-4f8a-abf2-3fcf754d3c8f"]] = True), 
+     DynamicModuleValues :> {}, 
+     Deinitialization :> (CodeInspector`LinterUI`Private`dockedCellPresentQ[
+        NotebookObject["eae0b851-3a6c-4f8a-abf2-3fcf754d3c8f"]] = False)]], 
+   Background -> GrayLevel[0.97], CellFrame -> {{0, 0}, {1, 1}}, 
+   CellFrameColor -> GrayLevel[0.85], CellFrameMargins -> {{0, 0}, {0, 0}}]},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:67089\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"eae0b851-3a6c-4f8a-abf2-3fcf754d3c8f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1440, 43, 100, "Input",ExpressionUUID->"d9a1da01-f9ef-4012-8a75-3fcfd6d9146e"],
+Cell[2001, 65, 843, 25, 44, "Input",ExpressionUUID->"c76a436e-24da-4bd3-9613-b74172df66c9"],
+Cell[2847, 92, 226, 5, 29, "Input",ExpressionUUID->"921fabd2-9ac0-459b-bb1c-e05b1b08aea7"],
+Cell[3076, 99, 243, 5, 50, InheritFromParent,ExpressionUUID->"df9d5a7d-978d-44bb-a361-734eed94bad6"],
+Cell[3322, 106, 397, 12, 44, "Input",ExpressionUUID->"76b317b5-d36d-4842-871c-53b37b82414f"],
+Cell[CellGroupData[{
+Cell[3744, 122, 537, 15, 90, InheritFromParent,ExpressionUUID->"ca64df28-0424-449f-b8ad-36a660066eba"],
+Cell[4284, 139, 156, 3, 33, "Output",ExpressionUUID->"eade4d3e-bcdd-4fb1-8562-3aa0fae9b3e9"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
